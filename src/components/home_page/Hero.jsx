@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import portfolio from '../../assets/gibili.png';
+import portfolio from '../../assets/portfolio2.png';
 
 
 const words = ["Full-Stack Developer", "MERN Enthusiastic", "Tech Explorer"];

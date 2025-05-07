@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Education from './Education';
 import Experience from './Experience';
 import Skills from './Skills';
-import gibili from '../../assets/gibili.png';
+import portfolio from '../../assets/portfolio2.png';
 import CustomCursor from '../CostomCursor'
 
 
@@ -32,7 +32,7 @@ const AboutPage = () => {
       {/* Image Section */}
       <div className="md:w-1/2 flex justify-center">
         <img 
-          src={gibili}
+          src={portfolio}
           alt="Your Name" 
           className="w-64 h-104 rounded-3xl shadow-2xl border-4 border-blue-400 object-cover"
         />

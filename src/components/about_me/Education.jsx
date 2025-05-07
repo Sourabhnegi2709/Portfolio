@@ -4,8 +4,8 @@ const Education = () => {
   const educationData = [
     {
       degree: "Bachelor of Computer Applications (BCA)",
-      institution: "Your University Name",
-      year: "2021 - 2024",
+      institution: "IGNOU",
+      year: "2022 - 2025",
       description: "Focused on software development, web technologies, and database management."
     },
   ];

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom"; // ✅ Added for SPA routing
 import portfolio from '../../assets/portfolio2.png';
-
 
 const words = ["Full-Stack Developer", "MERN Enthusiastic", "Tech Explorer"];
 
@@ -51,18 +51,22 @@ const Hero = () => {
                         <span className="text-blue-400 font-semibold">{text}</span>
                         <span className="animate-blink">|</span>
                     </p>
-                    <motion.a
-                        id="hire"
-                        href="/contact"
+                    <motion.div
                         whileHover={{ scale: 1.2, rotate: 3 }}
                         whileTap={{ scale: 0.9 }}
-                        className="inline-block mt-6 px-6 py-3 text-lg font-semibold bg-blue-500 text-white rounded-lg shadow-lg hover:bg-blue-600 transition"
+                        className="inline-block mt-6"
                     >
-                        Hire Me
-                    </motion.a>
+                        <Link
+                            to="/contact"
+                            id="hire"
+                            className="px-6 py-3 text-lg font-semibold bg-blue-500 text-white rounded-lg shadow-lg hover:bg-blue-600 transition"
+                        >
+                            Hire Me
+                        </Link>
+                    </motion.div>
                 </motion.div>
 
-                {/* Right Side - Image with 3 Framer Effects */}
+                {/* Right Side - Image with Framer Motion */}
                 <motion.div
                     className="flex justify-center"
                     initial={{ opacity: 0, y: 50, scale: 0.9 }}

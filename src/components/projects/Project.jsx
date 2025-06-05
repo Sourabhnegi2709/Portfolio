@@ -18,7 +18,15 @@ const projects = [
     title: "Stock Trading App",
     description: "A stock trading platform where users can buy and sell stocks, track their portfolio, and access real-time stock data.",
     image: Zerodha,
+    href: "https://shiny-yeot-e4ffd0.netlify.app",
     techStack: ["React", "Vite", "Node.js", "Express", "JWT Authentication"]
+  },
+  {
+    title: "Video Conferencing App",
+    description: "A real-time video conferencing platform with chat functionality, screen sharing, and user authentication.",
+    image: Video,
+    href: "https://video-meet-frontend-2grn.onrender.com",
+    techStack: ["React", "WebRTC", "Socket.io", "Node.js", "Tailwind CSS"]
   },
   {
     title: "Music Streaming App",
@@ -26,12 +34,7 @@ const projects = [
     image: Spotify,
     techStack: ["React", "Node.js", "Express", "MongoDB", "Redux"]
   },
-  {
-    title: "Video Conferencing App",
-    description: "A real-time video conferencing platform with chat functionality, screen sharing, and user authentication.",
-    image: Video,
-    techStack: ["React", "WebRTC", "Socket.io", "Node.js", "Tailwind CSS"]
-  }
+
 ];
 
 const Project = () => {
@@ -40,8 +43,8 @@ const Project = () => {
       <CustomCursor />
       <h2 className="text-4xl font-bold text-blue-400 text-center mb-6">Projects</h2>
       {projects.map((project, index) => (
-        <motion.div 
-          key={index} 
+        <motion.div
+          key={index}
           className={`flex flex-col md:flex-row ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-8 bg-gray-800 p-6 rounded-lg shadow-md`}
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -50,14 +53,14 @@ const Project = () => {
         >
           {/* Project Image */}
           <div className="md:w-1/2 flex justify-center p-6 bg-gray-700 rounded-lg shadow-md">
-            <img 
+            <img
               onClick={() => window.open(project.href, "_blank")}
-              src={project.image} 
-              alt={project.title} 
+              src={project.image}
+              alt={project.title}
               className="w-80 h-60 rounded-lg shadow-2xl object-cover border-4 border-blue-400"
             />
           </div>
-          
+
           {/* Project Description */}
           <div className="md:w-1/2 text-center md:text-left p-6 bg-gray-800 rounded-lg shadow-md">
             <h3 className="text-3xl font-bold text-yellow-400 mb-3">{project.title}</h3>

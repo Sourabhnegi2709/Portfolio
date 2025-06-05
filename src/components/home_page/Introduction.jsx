@@ -3,17 +3,18 @@ import { motion } from "framer-motion";
 
 import Zerodha from "../../assets/zerodha.png";
 import Airbnb from "../../assets/airbnb.png";
-import Spotify from "../../assets/spotify.png";
+import Video from '../../assets/video.png';
 
 const projects = [
   {
-    name: "Spotify Clone",
-    img: Spotify,
+    name: "VideoChat App",
+    href: "https://video-meet-frontend-2grn.onrender.com",
+    img: Video,
   },
   {
     name: "Zerodha Clone",
     img: Zerodha,
-    href: "https://zerodha-clone.onrender.com",
+    href: "https://shiny-yeot-e4ffd0.netlify.app",
   },
   {
     name: "Airbnb Clone",
